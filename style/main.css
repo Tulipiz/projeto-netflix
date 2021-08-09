@@ -1,0 +1,104 @@
+:root {
+    --azul:#1EB4E9;
+    --preto:#141414;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+
+}
+/* ELEMENTOS DO CABEÇALHO */
+body {
+    background: var(--preto);
+    font-family: 'Times New Roman', Times, serif;
+    color: azure;
+}
+
+header .container {
+    
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo{
+    color: var(--azul);
+    font-family: 'Arial black',times;
+    font-size: 45px;
+    margin-left: 5px;
+
+}
+header nav a{
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 20px;
+    font-size: 20px;
+}
+header nav a:hover{
+    color: #fff;
+}
+/* ELEMENTOS DA DESCRIÇÃO E FOTO PRINCIPAL */
+.manga-principal{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%),  url('https://www.ow-scan.com/wp-content/uploads/2016/10/8eb3b9fe-36af-4053-9cbe-6ce02df639ee.jpg');
+
+    height: 550px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+.manga-principal .descricao {
+    margin-bottom: 30px;
+    font-family: monospace;
+    
+}
+.manga-principal .nome-manga {
+    margin-top: 15%;
+    font-size: 40px;
+    font-family: monospace;
+    
+}
+.botao{
+    background-color: rgba(0,0,0,.50);
+    border:none;
+    color: white;
+
+    padding: 15px 30px;
+    margin-right: 10px;
+    
+    font-size: 12px;
+
+    cursor: pointer;
+    transition: .4s ease all;
+}
+.botao:hover{
+    background-color: white;
+    color: black;
+}
+.botao i{
+    margin-right: 8px;
+}
+
+.container{
+    margin-left: 20px ;
+}
+
+.manga-principal .container {
+    width: 70%;
+}
+.box-manga{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+.carrosel-mangás{
+    margin-top: 5px;
+}
